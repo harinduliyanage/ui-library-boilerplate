@@ -33,8 +33,9 @@ module.exports = {
 	},
 	plugins: [new HtmlWebpackPlugin({ template: "../public/index.html.ejs" })],
 	externals: {
-		react: "React",
+		"react": "React",
 		"react-dom": "ReactDOM",
+		"react-router": "ReactRouter"
 	},
 	performance: {
 		hints: false,
