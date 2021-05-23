@@ -7,10 +7,17 @@ const commonConfig = require("./common");
 module.exports = merge(commonConfig, {
   mode: "production",
   entry: "./index.tsx",
+  // use commented output config if you are running on express server
+  //output: {
+    //filename: "js/bundle.[contenthash].min.js",
+    //path: resolve(__dirname, "../../dist"),
+    //publicPath: "/",
+  //},
   output: {
-    filename: "js/bundle.[contenthash].min.js",
+    filename: "index.js",
     path: resolve(__dirname, "../../dist"),
-    publicPath: "/",
+    libraryTarget: "umd",
+    library: "ui-library"
   },
   devtool: "source-map",
   plugins: [],

@@ -2,6 +2,7 @@
   "name": "ui-library",
   "version": "1.0.0",
   "description": "",
+  "main": "dist/index.js",
   "author": "harindu.sul@gmail.com",
   "license": "ISC",
   "scripts": {
@@ -62,5 +63,8 @@
     "react": "*",
     "react-dom": "*"
   },
+  "files": [
+    "/dist/js"
+  ],
   "dependencies": {}
 }
