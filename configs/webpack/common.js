@@ -15,6 +15,13 @@ module.exports = {
 				exclude: /node_modules/,
 			},
 			{
+				test: /\.css$/,
+				use: [
+					'style-loader',
+					'css-loader'
+				]
+			},
+			{
 				test: /\.s[ac]ss$/i,
 				use: [
 					// Creates `style` nodes from JS strings
